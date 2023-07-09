@@ -12,7 +12,7 @@ pnpm i kudu-components
 
 ## Usage
 
-```svelte
+```HTML
 <script>
 	import { LinkedIn } from 'kudu-components/icons'
 </script>
