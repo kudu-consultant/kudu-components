@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { CrossCircle } from './icons'
+	import { CrossCircle } from './icons/index.js'
 	export let type: 'error'
 	export let extraclass: string = ''
 </script>
