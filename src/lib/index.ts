@@ -1,3 +1,3 @@
-import Toast from './Toast.svelte'
+import Announcement from './Announcement.svelte'
 
-export { Toast }
+export { Announcement }
