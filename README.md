@@ -6,6 +6,15 @@ Comprehensive collection of reusable UI components, used across all products dev
 
 ## Install package
 
+> **Note:**
+>
+> In order to the `kudu-components` package to work correctly, you need to
+> have `kudu-ui-components` configured in your project beforehand.
+> You can learn how to configure `kudu-ui-components` in your project
+> by following this [link](https://github.com/kudu-consultant/kudu-ui-system).
+
+After installing [ppnpm](https://pnpm.io/installation), `kudu-ui-system`, you can install `kudu-components` with this command:
+
 ```sh
 pnpm i kudu-components
 ```

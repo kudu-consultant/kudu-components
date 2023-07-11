@@ -42,7 +42,9 @@
 	},
 	"typesVersions": {
 		">4.0": {
-				"icons": ["./dist/icons/index.d.ts"]
+			"icons": [
+				"./dist/icons/index.d.ts"
+			]
 		}
 	},
 	"scripts": {
@@ -82,7 +84,7 @@
 		"vite-plugin-node-polyfills": "0.9.0"
 	},
 	"dependencies": {
-		"kudu-ui-system": "0.1.9",
+		"kudu-ui-system": "0.1.13",
 		"svelte": "3.59.1"
 	}
 }

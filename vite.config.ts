@@ -1,20 +1,9 @@
-import { sentrySvelteKit } from '@sentry/sveltekit'
 import { sveltekit } from '@sveltejs/kit/vite'
 import { defineConfig } from 'vite'
 import { nodePolyfills } from 'vite-plugin-node-polyfills'
 
 export default defineConfig(() => ({
 	plugins: [
-		sentrySvelteKit({
-			sourceMapsUploadOptions: {
-				org: process.env.SENTRY_ORG,
-				project: process.env.SENTRY_PROJECT,
-				authToken: process.env.SENTRY_AUTH_TOKEN,
-				url: process.env.SENTRY_URL,
-				cleanArtifacts: true,
-				rewrite: false
-			}
-		}),
 		sveltekit(),
 		nodePolyfills({
 			// To exclude specific polyfills, add them to this list. (only incude process for CoinWallet connector)
