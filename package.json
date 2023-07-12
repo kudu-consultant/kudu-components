@@ -1,6 +1,6 @@
 {
 	"name": "kudu-components",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Just a demo",
 	"author": {
 		"name": "Kudu Consultant LLC",
@@ -38,12 +38,22 @@
 		"./icons": {
 			"types": "./dist/icons/index.d.ts",
 			"svelte": "./dist/icons/index.js"
+		},
+		"./modals": {
+			"types": "./dist/modals/index.d.ts",
+			"svelte": "./dist/modals/index.js"
 		}
 	},
 	"typesVersions": {
 		">4.0": {
 			"icons": [
 				"./dist/icons/index.d.ts"
+			],
+			"modals": [
+				"./dist/modals/index.d.ts"
+			],
+			"*": [
+				"./dist/index.d.ts"
 			]
 		}
 	},
@@ -84,7 +94,10 @@
 		"vite-plugin-node-polyfills": "0.9.0"
 	},
 	"dependencies": {
-		"kudu-ui-system": "0.1.13",
-		"svelte": "3.59.1"
+		"@wagmi/core": "^1.3.7",
+		"kudu-ui-system": "0.1.17",
+		"kudu-utils": "0.0.3",
+		"svelte": "3.59.1",
+		"viem": "^1.2.12"
 	}
 }
