@@ -35,7 +35,7 @@
 	import { connect, type Chain, type Connector } from '@wagmi/core'
 	import { Announcement } from '../..'
 	import { fly } from 'svelte/transition'
-	import { onMount, tick } from 'svelte'
+	import { onMount } from 'svelte'
 
 	export let toggle: ((value?: boolean) => void) | null
 	export let locales: {

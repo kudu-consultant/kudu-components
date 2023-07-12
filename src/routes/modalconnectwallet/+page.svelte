@@ -4,6 +4,7 @@
 	import { publicProvider } from '@wagmi/core/providers/public'
 	import { onMount } from 'svelte'
 	import { polygonZkEvmTestnet } from 'viem/chains'
+	import { env } from '$env/dynamic/public'
 
 	const { chains, publicClient, webSocketPublicClient } = configureChains(
 		[polygonZkEvmTestnet],
@@ -43,12 +44,12 @@
 						{accounts.length - i + '. '}
 					</span>
 					{#each Object.entries(account) as [key, value]}
-						{key + ': ' + value}
+						{key + ': ' + value + ', '}
 					{/each}
 				</li>
 			{/each}
 		</ol>
 	</div>
 
-	<ModalConnectWallet lang="en" {chain} projectId="968f4691084c59b14219061fa588a02d" />
+	<ModalConnectWallet lang="en" {chain} projectId={env.PUBLIC_WALLET_CONNECT_PROJECT_ID} />
 </section>
