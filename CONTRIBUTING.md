@@ -9,8 +9,9 @@ Kudu Components
 - [Contributing](#contributing)
   - [Table of Contents](#table-of-contents)
   - [Code of conduct](#code-of-conduct)
-  - [Local development](#local-development)
+  - [Enviroment variables](#enviroment-variables)
   - [Files and folders](#files-and-folders)
+  - [Local development](#local-development)
   - [How can I contribute?](#how-can-i-contribute)
     - [Reporting an issue](#reporting-an-issue)
     - [Code contribution](#code-contribution)
@@ -25,18 +26,17 @@ Kudu Components
 
 This project and everyone participating in it is governed by the [following code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
-## Local development
+## Environment variables
 
-TODO
-
-```sh
-pnpm i kudu-components
-```
+| NAME                             | VALUE                          |
+| -------------------------------- | ------------------------------ |
+| PUBLIC_WALLET_CONNECT_PROJECT_ID | ypur_wallet_connect_project_id |
 
 ## Important files and folders
 
 | File(s)              | Description                                            |
 | -------------------- | ------------------------------------------------------ |
+| `package.json`       | Configuration file for the project                     |
 | `svelte.config.js`   | Config file for Svelte                                 |
 | `vite.config.js`     | Config file for Vite                                   |
 | `tsconfig.json`      | Config file for TypeScript                             |
@@ -52,6 +52,13 @@ pnpm i kudu-components
 | `.vscode`            | Specific vscode config for project                     |
 | `.github`            | Folder for GitHub-specific files and workflows (CI/CD) |
 | `src`                | All sources files, the core of the project             |
+| `src/lib`            | All core files of the library                          |
+| `src/routes`         | All demo files of library components                   |
+| `dist`               | Folder containing the built and compiled output        |
+
+## Local development
+
+TODO
 
 ## How can I contribute?
 

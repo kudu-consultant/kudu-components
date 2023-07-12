@@ -19,7 +19,32 @@ After installing [ppnpm](https://pnpm.io/installation), `kudu-ui-system`, you ca
 pnpm i kudu-components
 ```
 
+To use some components like `ModalConnectWallet`, you need to install `wagmi` and `viem`packages it into your project. Please refer to the documentation of [wagmi/core](https://wagmi.sh/core/getting-started) for know more.
+
 ## Usage
+
+1. In your `tailwind.config.js` specify the content of `kudu-components` should be processed by Tailwind CSS during the build process
+
+```js
+/** @type {import('tailwindcss').Config} */
+export default {
+	content: [...'./node_modules/kudu-components/**/*.{html,js,svelte,ts}']
+}
+```
+
+2. Exclude the `kudu-components` package from the optimized dependencies in your `vite.config.js`.
+
+```js
+export default defineConfig(() => ({
+	...
+	optimizeDeps: {
+		exclude: ['kudu-components']
+	},
+	...
+}))
+```
+
+3. Import and use any `kudu-components`
 
 ```HTML
 <script>
