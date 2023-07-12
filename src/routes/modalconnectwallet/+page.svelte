@@ -39,7 +39,12 @@
 		<ol class="grid gap-2">
 			{#each accounts as account, i}
 				<li>
-					{accounts.length - i + '. ' + JSON.stringify(account)}
+					<span>
+						{accounts.length - i + '. '}
+					</span>
+					{#each Object.entries(account) as [key, value]}
+						{key + ': ' + value}
+					{/each}
 				</li>
 			{/each}
 		</ol>

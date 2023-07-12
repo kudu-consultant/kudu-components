@@ -35,6 +35,7 @@
 	import { connect, type Chain, type Connector } from '@wagmi/core'
 	import { Announcement } from '../..'
 	import { fly } from 'svelte/transition'
+	import { onMount, tick } from 'svelte'
 
 	export let toggle: ((value?: boolean) => void) | null
 	export let locales: {
@@ -50,10 +51,6 @@
 	export let lang: 'en' | 'es'
 	export let projectId: string
 	export let chain: Chain
-
-	connectors = connectors ?? setConnectors(chain, projectId)
-
-	let innerWidth = 0
 
 	let errorMessage: string | null = null
 	const handleConnect = async (connector: Connector) => {
@@ -79,6 +76,9 @@
 			}
 		}
 	}
+
+	let innerWidth = 0
+	onMount(() => (connectors = connectors ?? setConnectors(chain, projectId)))
 </script>
 
 <svelte:window bind:innerWidth />
