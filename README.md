@@ -21,6 +21,17 @@ pnpm i kudu-components
 
 ## Usage
 
+1. Specify the content of `kudu-components` should be processed by Tailwind CSS during the build process
+
+```js
+/** @type {import('tailwindcss').Config} */
+export default {
+	content: [...'./node_modules/kudu-components/**/*.{html,js,svelte,ts}']
+}
+```
+
+2. Import and use any `kudu-components`
+
 ```HTML
 <script>
 	import { LinkedIn } from 'kudu-components/icons'
