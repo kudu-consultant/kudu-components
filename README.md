@@ -9,7 +9,7 @@ Comprehensive collection of reusable UI components, used across all products dev
 > **Note:**
 >
 > In order to the `kudu-components` package to work correctly, you need to
-> have `kudu-ui-components` configured in your project beforehand.
+> have `kudu-ui-system` configured in your project beforehand.
 > You can learn how to configure `kudu-ui-components` in your project
 > by following this [link](https://github.com/kudu-consultant/kudu-ui-system).
 
