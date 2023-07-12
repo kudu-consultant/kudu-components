@@ -1,3 +1,4 @@
 import Announcement from './Announcement.svelte'
+import { ModalConnectWallet, toggleModalConnectWallet } from './modals'
 
-export { Announcement }
+export { Announcement, ModalConnectWallet, toggleModalConnectWallet }
