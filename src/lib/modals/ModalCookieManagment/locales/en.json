@@ -1,0 +1,13 @@
+{
+	"title": "Manage cookie preferences",
+	"functionalCookies": {
+		"title": "Functional cookies",
+		"description": "Functional cookies enable our website to work properly, so you can create your account, sign in, or manage your shopping cart. They also remember your selected currency, language and other preferences. These technical cookies must be enabled in order to use our site and services."
+	},
+	"analyticalCookies": {
+		"title": "Analytical cookies",
+		"description": "Analytical cookies help us understand how customers like you use our site. This means we can improve our website, apps, and communications, and ensure we continue to be interesting and relevant."
+	},
+	"buttonAllowCurrentSelection": "Accept current selection",
+	"buttonAllowAll": "Allow all"
+}
