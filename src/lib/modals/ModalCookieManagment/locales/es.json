@@ -1,13 +1,13 @@
 {
-	"title": "Manage cookie preferences",
+	"title": "Administrar las preferencias de cookies",
 	"functionalCookies": {
-		"title": "Functional cookies",
-		"description": "Functional cookies enable our website to work properly, so you can create your account, sign in, or manage your shopping cart. They also remember your selected currency, language and other preferences. These technical cookies must be enabled in order to use our site and services."
+		"title": "Cookies funcionales",
+		"description": "Las cookies funcionales permiten que nuestro sitio web funcione correctamente, para que pueda crear su cuenta, iniciar sesión o administrar su carrito de compras. También recuerdan su moneda seleccionada, idioma y otras preferencias. Estas cookies técnicas deben estar habilitadas para usar nuestro sitio y servicios."
 	},
 	"analyticalCookies": {
-		"title": "Analytical cookies",
-		"description": "Analytical cookies help us understand how customers like you use our site. This means we can improve our website, apps, and communications, and ensure we continue to be interesting and relevant."
+		"title": "Cookies analíticas",
+		"description": "Las cookies analíticas nos ayudan a entender cómo usan nuestro sitio los clientes como usted. Esto significa que podemos mejorar nuestro sitio web, aplicaciones y comunicaciones, y asegurarnos de que sigan siendo interesantes y relevantes."
 	},
-	"buttonAllowCurrentSelection": "Accept current selection",
-	"buttonAllowAll": "Allow all"
+	"buttonAllowCurrentSelection": "Aceptar la selección actual",
+	"buttonAllowAll": "Permitir todo"
 }
