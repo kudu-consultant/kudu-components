@@ -96,7 +96,7 @@
 		"viem": "^1.2.12"
 	},
 	"dependencies": {
-		"kudu-ui-system": "0.1.17",
+		"kudu-ui-system": "0.1.18",
 		"kudu-utils": "0.0.5",
 		"svelte": "3.59.1"
 	}
