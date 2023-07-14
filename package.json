@@ -1,6 +1,6 @@
 {
 	"name": "kudu-components",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Just a demo",
 	"author": {
 		"name": "Kudu Consultant LLC",
@@ -79,7 +79,7 @@
 		"eslint-config-prettier": "8.8.0",
 		"eslint-plugin-svelte": "2.30.0",
 		"eslint-plugin-unused-imports": "2.0.0",
-		"lefthook": "^1.4.1",
+		"lefthook": "1.4.1",
 		"postcss": "8.4.24",
 		"prettier": "2.8.8",
 		"prettier-plugin-svelte": "2.10.1",
@@ -96,7 +96,7 @@
 		"viem": "^1.2.12"
 	},
 	"dependencies": {
-		"kudu-ui-system": "0.1.18",
+		"kudu-ui-system": "0.1.19",
 		"kudu-utils": "0.0.5",
 		"svelte": "3.59.1"
 	}
