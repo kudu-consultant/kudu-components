@@ -1,6 +1,6 @@
 {
 	"name": "kudu-components",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "Just a demo",
 	"author": {
 		"name": "Kudu Consultant LLC",
@@ -97,7 +97,7 @@
 	},
 	"dependencies": {
 		"kudu-ui-system": "0.1.19",
-		"kudu-utils": "0.0.5",
+		"kudu-utils": "0.0.6",
 		"svelte": "3.59.1"
 	}
 }
