@@ -1,3 +1,4 @@
+import ArrowLeft from './ArrowLeft.svelte'
 import CheckCircle from './CheckCircle.svelte'
 import Close from './Close.svelte'
 import CrossCircle from './CrossCircle.svelte'
@@ -8,4 +9,15 @@ import Menu from './Menu.svelte'
 import Settings from './Settings.svelte'
 import Twitter from './Twitter.svelte'
 
-export { CheckCircle, Close, CrossCircle, Discord, Github, LinkedIn, Menu, Settings, Twitter }
+export {
+	ArrowLeft,
+	CheckCircle,
+	Close,
+	CrossCircle,
+	Discord,
+	Github,
+	LinkedIn,
+	Menu,
+	Settings,
+	Twitter
+}
