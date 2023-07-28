@@ -8,6 +8,7 @@ import LinkedIn from './Linkedin.svelte'
 import Menu from './Menu.svelte'
 import Settings from './Settings.svelte'
 import Twitter from './Twitter.svelte'
+import Web from './Web.svelte'
 
 export {
 	ArrowLeft,
@@ -19,5 +20,6 @@ export {
 	LinkedIn,
 	Menu,
 	Settings,
-	Twitter
+	Twitter,
+	Web
 }

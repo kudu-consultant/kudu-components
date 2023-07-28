@@ -19,7 +19,7 @@ After installing [ppnpm](https://pnpm.io/installation), `kudu-ui-system`, you ca
 pnpm i kudu-components
 ```
 
-To use some components like `ModalConnectWallet`, you need to install `wagmi` and `viem`packages it into your project. Please refer to the documentation of [wagmi/core](https://wagmi.sh/core/getting-started) for know more.
+To utilize components encompassed on the web3 path like `ModalConnectWallet`, you need to install `wagmi` and `viem`packages it into your project. Please refer to the documentation of [wagmi/core](https://wagmi.sh/core/getting-started) for know more.
 
 ## Usage
 

@@ -1,5 +1,5 @@
 <script>
-	import { ModalConnectWallet, toggleModalConnectWallet } from '$lib'
+	import { ModalConnectWallet, toggleModalConnectWallet } from '$lib/modals/ModalConnectWallet'
 	import { configureChains, createConfig, getAccount, watchAccount } from '@wagmi/core'
 	import { publicProvider } from '@wagmi/core/providers/public'
 	import { onMount } from 'svelte'

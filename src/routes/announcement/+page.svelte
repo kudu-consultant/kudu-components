@@ -1,5 +1,5 @@
 <script>
-	import { Announcement } from '$lib'
+	import Announcement from '$lib/Announcement.svelte'
 </script>
 
 <section class="p-6 min-h-screen">

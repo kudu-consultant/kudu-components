@@ -14,6 +14,8 @@
 	export let projectId: string
 	export let chain: Chain
 
+	let prepared = false
+
 	let isOpen = false
 
 	const locales = lang === 'es' ? ES : EN
@@ -22,13 +24,15 @@
 		toggle = (value?: boolean) => {
 			isOpen = value ?? !isOpen
 		}
+		prepared = true
 		return () => {
 			toggle = null
+			prepared = false
 		}
 	})
 </script>
 
-{#if toggle}
+{#if prepared}
 	<CenterModal {toggle} {isOpen} {locales}>
 		<Inner {toggle} {locales} {chain} {projectId} {lang} />
 	</CenterModal>
