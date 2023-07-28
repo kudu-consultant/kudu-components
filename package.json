@@ -1,6 +1,6 @@
 {
 	"name": "kudu-components",
-	"version": "0.0.9",
+	"version": "0.1.0",
 	"description": "Just a demo",
 	"author": {
 		"name": "Kudu Consultant LLC",
@@ -31,17 +31,17 @@
 		"access": "public"
 	},
 	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"svelte": "./dist/index.js"
-		},
 		"./icons": {
 			"types": "./dist/icons/index.d.ts",
 			"svelte": "./dist/icons/index.js"
 		},
-		"./modals": {
-			"types": "./dist/modals/index.d.ts",
-			"svelte": "./dist/modals/index.js"
+		"./modal-connect-wallet": {
+			"types": "./dist/modals/ModalConnectWallet/index.d.ts",
+			"svelte": "./dist/modals/ModalConnectWallet/index.js"
+		},
+		"./modal-cookies-management": {
+			"types": "./dist/modals/ModalCookiesManagement/index.d.ts",
+			"svelte": "./dist/modals/ModalCookiesManagement/index.js"
 		}
 	},
 	"typesVersions": {
@@ -49,11 +49,11 @@
 			"icons": [
 				"./dist/icons/index.d.ts"
 			],
-			"modals": [
-				"./dist/modals/index.d.ts"
+			"web3/modal-connect-wallet": [
+				"./dist/modals/ModalConnectWallet/index.d.ts"
 			],
-			"*": [
-				"./dist/index.d.ts"
+			"modal-cookies-management": [
+				"./dist/modals/ModalCookiesManagement/index.d.ts"
 			]
 		}
 	},

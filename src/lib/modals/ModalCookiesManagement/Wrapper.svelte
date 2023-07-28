@@ -1,5 +1,16 @@
 <script context="module" lang="ts">
 	export let toggle: ((value?: boolean) => void) | null = null
+
+	export const setupModalCookiesManagement = () => {
+		const cookieSettings =
+			window.localStorage.getItem('cookies-settings') !== null
+				? JSON.parse(window.localStorage.getItem('cookies-settings')!)
+				: { show: true, analytics: true, functional: true }
+
+		if (!cookieSettings.show) return
+
+		window.localStorage.setItem('cookies-settings', JSON.stringify(cookieSettings))
+	}
 </script>
 
 <script lang="ts">
@@ -11,7 +22,9 @@
 
 	export let lang: 'en' | 'es'
 
-	let isOpen = false
+	let prepared = false
+
+	export let isOpen = false
 
 	const locales = lang === 'es' ? ES : EN
 
@@ -19,13 +32,15 @@
 		toggle = (value?: boolean) => {
 			isOpen = value ?? !isOpen
 		}
+		prepared = true
 		return () => {
 			toggle = null
+			prepared = false
 		}
 	})
 </script>
 
-{#if toggle}
+{#if prepared}
 	<DownPopUpModal {toggle} {isOpen} {locales}>
 		<Inner {toggle} {locales} />
 	</DownPopUpModal>

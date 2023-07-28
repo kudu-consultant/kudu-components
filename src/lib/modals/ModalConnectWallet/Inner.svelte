@@ -33,7 +33,7 @@
 	import { WalletConnectConnector } from '@wagmi/core/connectors/walletConnect'
 	import { imageWalletSelector } from 'kudu-utils'
 	import { connect, type Chain, type Connector } from '@wagmi/core'
-	import { Announcement } from '../..'
+	import Announcement from '../../Announcement.svelte'
 	import { fly } from 'svelte/transition'
 	import { onMount } from 'svelte'
 
